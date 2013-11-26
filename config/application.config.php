@@ -21,7 +21,7 @@ return array(
     ),
     'module_listener_options' => array(
         'config_glob_paths'        => array(
-            'config/autoload/{,*.}{production,development}.php',
+            'config/autoload/{,*.}{global,local}.php',
         ),
         'module_paths'             => array(
             './module',
