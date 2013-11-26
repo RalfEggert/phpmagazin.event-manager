@@ -8,11 +8,18 @@
  * @link       http://www.ralfeggert.de/
  */
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /**
  * basic
  */
 body {
-    font-family: 'Open Sans', ​Arial,​ sans-serif;
+    font-family: 'Open Sans', ​ Arial, ​ sans-serif;
     font-size: 14px;
     border-top: 10px solid #0d7146;
 }
