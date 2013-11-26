@@ -5,7 +5,6 @@ Gepimpte SkeletonApplication für das Zend Framework 2, die einige Änderungen z
 [ZendSkeletonApplication](https://github.com/zendframework/ZendSkeletonApplication)
 mit sich bringt:
 
-- Mehrstufiges Layout mit Header und Footer
 - Application Management mit Stufen "development" und "production"
 - "Schönere" Fehlerseiten
 - [ZendDeveloperTools](https://github.com/zendframework/ZendDeveloperTools) vorinstalliert
