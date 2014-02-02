@@ -1,8 +1,8 @@
 <?php
 /**
- * Zend Framework 2 - MySkeletonApplication
+ * Zend Framework 2 - PHP-Magazin Event-Manager
  *
- * Gepimpte SkeletonApplication für das Zend Framework 2,
+ * Beispiele für ZF2 Event-Manager
  * 
  * @package    Application
  * @author     Ralf Eggert <r.eggert@travello.de>
