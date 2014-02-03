@@ -17,7 +17,6 @@ namespace Application;
 use Application\Listener\I18nListener;
 use Application\Listener\ViewListener;
 use Zend\EventManager\EventInterface;
-use Zend\Filter\StaticFilter;
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\BootstrapListenerInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
