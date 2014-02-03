@@ -14,6 +14,8 @@
  */
 namespace Application;
 
+use Application\Listener\I18nListener;
+use Application\Listener\ViewListener;
 use Zend\EventManager\EventInterface;
 use Zend\Filter\StaticFilter;
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
@@ -45,6 +47,10 @@ class Module implements
         $eventManager = $e->getApplication()->getEventManager();
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
+
+        // attach I18n Listener
+        $eventManager->attachAggregate(new I18nListener());
+        $eventManager->attachAggregate(new ViewListener());
     }
 
     /**

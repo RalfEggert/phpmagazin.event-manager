@@ -1,0 +1,50 @@
+<?php
+/**
+ * Zend Framework 2 - PHP-Magazin Event-Manager
+ *
+ * Beispiele für ZF2 Event-Manager
+ *
+ * @package    Application
+ * @author     Ralf Eggert <r.eggert@travello.de>
+ * @link       http://www.ralfeggert.de/
+ */
+
+/**
+ * namespace definition and usage
+ */
+
+/**
+ * Index view script
+ *
+ * @package    Application
+ */
+
+$this->headTitle('Sprache prüfen');
+
+$date = $this->dateFormat(
+    new DateTime(),
+    IntlDateFormatter::LONG,
+    IntlDateFormatter::NONE
+);
+$time = $this->dateFormat(
+    new DateTime(),
+    IntlDateFormatter::NONE,
+    IntlDateFormatter::LONG
+);
+$amount = $this->currencyFormat(123456.78);
+
+$localeList = array('de', 'en', 'fr', 'it');
+?>
+<div class="jumbotron">
+    <h1>Aktuelle Sprache: <?php echo Locale::getDefault(); ?></h1>
+    <p>Datum: <?php echo $date; ?></p>
+    <p>Zeit: <?php echo $time; ?></p>
+    <p>Betrag: <?php echo $amount; ?></p>
+</div>
+<?php foreach ($localeList as $locale): ?>
+    <?php $url = $this->url('i18n', array('lang' => $locale)); ?>
+    <a href="<?php echo $url; ?>" class="btn btn-primary">
+        <?php echo $locale; ?>
+    </a>
+<?php endforeach; ?>
+

@@ -15,6 +15,8 @@
  * @package    Application
  */
 
+define('TIMESTAMP_START', microtime(true));
+
 // define application path
 define('APPLICATION_ROOT', realpath(__DIR__ . '/..'));
 
